@@ -518,3 +518,263 @@ java.lang.UnsatisfiedLinkError: /opt/knime/plugins/com.equo.chromium.cef.gtk.lin
 	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:588)
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1459)
 	at org.eclipse.equinox.launcher.Main.main(Main.java:1432)
+!SESSION 2025-06-04 16:22:03.743 -----------------------------------------------
+eclipse.buildId=unknown
+java.version=17.0.5
+java.vendor=Eclipse Adoptium
+BootLoader constants: OS=linux, ARCH=x86_64, WS=gtk, NL=en_US
+Framework arguments:  -application org.knime.product.KNIME_BATCH_APPLICATION -workflowDir=/opt/knime/workflows/HG_Insights_project -reset -nosave
+Command-line arguments:  -os linux -ws gtk -arch x86_64 -application org.knime.product.KNIME_BATCH_APPLICATION -workflowDir=/opt/knime/workflows/HG_Insights_project -reset -nosave -data /tmp/knime-workspace
+
+!ENTRY org.eclipse.osgi 4 0 2025-06-04 16:22:51.432
+!MESSAGE Application error
+!STACK 1
+java.lang.UnsatisfiedLinkError: /opt/knime/plugins/com.equo.chromium.cef.gtk.linux.x86_64_116.0.21/chromium-5845/libequochro.so: libgbm.so.1: cannot open shared object file: No such file or directory
+	at java.base/jdk.internal.loader.NativeLibraries.load(Native Method)
+	at java.base/jdk.internal.loader.NativeLibraries$NativeLibraryImpl.open(Unknown Source)
+	at java.base/jdk.internal.loader.NativeLibraries.loadLibrary(Unknown Source)
+	at java.base/jdk.internal.loader.NativeLibraries.loadLibrary(Unknown Source)
+	at java.base/java.lang.ClassLoader.loadLibrary(Unknown Source)
+	at java.base/java.lang.Runtime.load0(Unknown Source)
+	at java.base/java.lang.System.load(Unknown Source)
+	at com.equo.chromium.internal.Engine$1.loadLibrary(Engine.java:90)
+	at org.cef.SystemBootstrap.loadLibrary(SystemBootstrap.java:36)
+	at org.cef.CefApp.startup(CefApp.java:577)
+	at com.equo.chromium.internal.Engine.loadLib(Engine.java:97)
+	at com.equo.chromium.internal.Engine.<clinit>(Engine.java:54)
+	at com.equo.chromium.internal.Windowless.<init>(Windowless.java:19)
+	at com.equo.chromium.internal.Windowless.<init>(Windowless.java:15)
+	at com.equo.chromium.ChromiumBrowser.windowless(ChromiumBrowser.java:92)
+	at org.knime.js.cef.InitWindowlessCEF.run(InitWindowlessCEF.java:73)
+	at org.knime.core.util.IEarlyStartup$EarlyStartupState.runHooksAtStage(IEarlyStartup.java:341)
+	at org.knime.core.util.IEarlyStartup$EarlyStartupState.moveToStage(IEarlyStartup.java:316)
+	at org.knime.core.util.IEarlyStartup$EarlyStartupState.runBeforeWFMClassLoaded(IEarlyStartup.java:274)
+	at org.knime.core.util.IEarlyStartup.runBeforeWFMClassLoaded(IEarlyStartup.java:159)
+	at org.knime.core.node.workflow.WorkflowManager.<clinit>(WorkflowManager.java:435)
+	at org.knime.core.node.workflow.BatchExecutor.loadWorkflow(BatchExecutor.java:750)
+	at org.knime.core.node.workflow.BatchExecutor.runOne(BatchExecutor.java:917)
+	at org.knime.core.node.workflow.BatchExecutor.runAll(BatchExecutor.java:899)
+	at org.knime.core.node.workflow.BatchExecutor.mainRun(BatchExecutor.java:673)
+	at org.knime.product.headless.KNIMEBatchApplication.runBatchExecutor(KNIMEBatchApplication.java:138)
+	at org.knime.product.headless.KNIMEBatchApplication.start(KNIMEBatchApplication.java:91)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:208)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:143)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:109)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:439)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:271)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.base/java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:651)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:588)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1459)
+	at org.eclipse.equinox.launcher.Main.main(Main.java:1432)
+!SESSION 2025-06-04 16:22:35.166 -----------------------------------------------
+eclipse.buildId=unknown
+java.version=17.0.5
+java.vendor=Eclipse Adoptium
+BootLoader constants: OS=linux, ARCH=x86_64, WS=gtk, NL=en_US
+Framework arguments:  -application org.knime.product.KNIME_BATCH_APPLICATION -workflowDir=/opt/knime/workflows/HG_Insights_project -reset -nosave
+Command-line arguments:  -os linux -ws gtk -arch x86_64 -application org.knime.product.KNIME_BATCH_APPLICATION -workflowDir=/opt/knime/workflows/HG_Insights_project -reset -nosave -data /tmp/knime-workspace
+
+!ENTRY org.eclipse.osgi 4 0 2025-06-04 16:23:03.545
+!MESSAGE Application error
+!STACK 1
+java.lang.UnsatisfiedLinkError: /opt/knime/plugins/com.equo.chromium.cef.gtk.linux.x86_64_116.0.21/chromium-5845/libequochro.so: libgbm.so.1: cannot open shared object file: No such file or directory
+	at java.base/jdk.internal.loader.NativeLibraries.load(Native Method)
+	at java.base/jdk.internal.loader.NativeLibraries$NativeLibraryImpl.open(Unknown Source)
+	at java.base/jdk.internal.loader.NativeLibraries.loadLibrary(Unknown Source)
+	at java.base/jdk.internal.loader.NativeLibraries.loadLibrary(Unknown Source)
+	at java.base/java.lang.ClassLoader.loadLibrary(Unknown Source)
+	at java.base/java.lang.Runtime.load0(Unknown Source)
+	at java.base/java.lang.System.load(Unknown Source)
+	at com.equo.chromium.internal.Engine$1.loadLibrary(Engine.java:90)
+	at org.cef.SystemBootstrap.loadLibrary(SystemBootstrap.java:36)
+	at org.cef.CefApp.startup(CefApp.java:577)
+	at com.equo.chromium.internal.Engine.loadLib(Engine.java:97)
+	at com.equo.chromium.internal.Engine.<clinit>(Engine.java:54)
+	at com.equo.chromium.internal.Windowless.<init>(Windowless.java:19)
+	at com.equo.chromium.internal.Windowless.<init>(Windowless.java:15)
+	at com.equo.chromium.ChromiumBrowser.windowless(ChromiumBrowser.java:92)
+	at org.knime.js.cef.InitWindowlessCEF.run(InitWindowlessCEF.java:73)
+	at org.knime.core.util.IEarlyStartup$EarlyStartupState.runHooksAtStage(IEarlyStartup.java:341)
+	at org.knime.core.util.IEarlyStartup$EarlyStartupState.moveToStage(IEarlyStartup.java:316)
+	at org.knime.core.util.IEarlyStartup$EarlyStartupState.runBeforeWFMClassLoaded(IEarlyStartup.java:274)
+	at org.knime.core.util.IEarlyStartup.runBeforeWFMClassLoaded(IEarlyStartup.java:159)
+	at org.knime.core.node.workflow.WorkflowManager.<clinit>(WorkflowManager.java:435)
+	at org.knime.core.node.workflow.BatchExecutor.loadWorkflow(BatchExecutor.java:750)
+	at org.knime.core.node.workflow.BatchExecutor.runOne(BatchExecutor.java:917)
+	at org.knime.core.node.workflow.BatchExecutor.runAll(BatchExecutor.java:899)
+	at org.knime.core.node.workflow.BatchExecutor.mainRun(BatchExecutor.java:673)
+	at org.knime.product.headless.KNIMEBatchApplication.runBatchExecutor(KNIMEBatchApplication.java:138)
+	at org.knime.product.headless.KNIMEBatchApplication.start(KNIMEBatchApplication.java:91)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:208)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:143)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:109)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:439)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:271)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.base/java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:651)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:588)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1459)
+	at org.eclipse.equinox.launcher.Main.main(Main.java:1432)
+!SESSION 2025-06-04 16:34:55.393 -----------------------------------------------
+eclipse.buildId=unknown
+java.version=17.0.5
+java.vendor=Eclipse Adoptium
+BootLoader constants: OS=linux, ARCH=x86_64, WS=gtk, NL=en_US
+Framework arguments:  -application org.knime.product.KNIME_BATCH_APPLICATION -workflowDir=/opt/knime/workflows/HG_Insights_project -reset -nosave
+Command-line arguments:  -os linux -ws gtk -arch x86_64 -application org.knime.product.KNIME_BATCH_APPLICATION -workflowDir=/opt/knime/workflows/HG_Insights_project -reset -nosave -data /tmp/knime-workspace
+
+!ENTRY org.eclipse.osgi 4 0 2025-06-04 16:35:38.604
+!MESSAGE Application error
+!STACK 1
+java.lang.UnsatisfiedLinkError: /opt/knime/plugins/com.equo.chromium.cef.gtk.linux.x86_64_116.0.21/chromium-5845/libequochro.so: libgbm.so.1: cannot open shared object file: No such file or directory
+	at java.base/jdk.internal.loader.NativeLibraries.load(Native Method)
+	at java.base/jdk.internal.loader.NativeLibraries$NativeLibraryImpl.open(Unknown Source)
+	at java.base/jdk.internal.loader.NativeLibraries.loadLibrary(Unknown Source)
+	at java.base/jdk.internal.loader.NativeLibraries.loadLibrary(Unknown Source)
+	at java.base/java.lang.ClassLoader.loadLibrary(Unknown Source)
+	at java.base/java.lang.Runtime.load0(Unknown Source)
+	at java.base/java.lang.System.load(Unknown Source)
+	at com.equo.chromium.internal.Engine$1.loadLibrary(Engine.java:90)
+	at org.cef.SystemBootstrap.loadLibrary(SystemBootstrap.java:36)
+	at org.cef.CefApp.startup(CefApp.java:577)
+	at com.equo.chromium.internal.Engine.loadLib(Engine.java:97)
+	at com.equo.chromium.internal.Engine.<clinit>(Engine.java:54)
+	at com.equo.chromium.internal.Windowless.<init>(Windowless.java:19)
+	at com.equo.chromium.internal.Windowless.<init>(Windowless.java:15)
+	at com.equo.chromium.ChromiumBrowser.windowless(ChromiumBrowser.java:92)
+	at org.knime.js.cef.InitWindowlessCEF.run(InitWindowlessCEF.java:73)
+	at org.knime.core.util.IEarlyStartup$EarlyStartupState.runHooksAtStage(IEarlyStartup.java:341)
+	at org.knime.core.util.IEarlyStartup$EarlyStartupState.moveToStage(IEarlyStartup.java:316)
+	at org.knime.core.util.IEarlyStartup$EarlyStartupState.runBeforeWFMClassLoaded(IEarlyStartup.java:274)
+	at org.knime.core.util.IEarlyStartup.runBeforeWFMClassLoaded(IEarlyStartup.java:159)
+	at org.knime.core.node.workflow.WorkflowManager.<clinit>(WorkflowManager.java:435)
+	at org.knime.core.node.workflow.BatchExecutor.loadWorkflow(BatchExecutor.java:750)
+	at org.knime.core.node.workflow.BatchExecutor.runOne(BatchExecutor.java:917)
+	at org.knime.core.node.workflow.BatchExecutor.runAll(BatchExecutor.java:899)
+	at org.knime.core.node.workflow.BatchExecutor.mainRun(BatchExecutor.java:673)
+	at org.knime.product.headless.KNIMEBatchApplication.runBatchExecutor(KNIMEBatchApplication.java:138)
+	at org.knime.product.headless.KNIMEBatchApplication.start(KNIMEBatchApplication.java:91)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:208)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:143)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:109)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:439)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:271)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.base/java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:651)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:588)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1459)
+	at org.eclipse.equinox.launcher.Main.main(Main.java:1432)
+!SESSION 2025-06-04 16:40:41.688 -----------------------------------------------
+eclipse.buildId=unknown
+java.version=17.0.5
+java.vendor=Eclipse Adoptium
+BootLoader constants: OS=linux, ARCH=x86_64, WS=gtk, NL=en_US
+Framework arguments:  -application org.knime.product.KNIME_BATCH_APPLICATION -workflowDir=/opt/knime/workflows/HG_Insights_project -reset -nosave
+Command-line arguments:  -os linux -ws gtk -arch x86_64 -application org.knime.product.KNIME_BATCH_APPLICATION -workflowDir=/opt/knime/workflows/HG_Insights_project -reset -nosave -data /tmp/knime-workspace
+
+!ENTRY org.eclipse.osgi 4 0 2025-06-04 16:41:18.492
+!MESSAGE Application error
+!STACK 1
+java.lang.UnsatisfiedLinkError: /opt/knime/plugins/com.equo.chromium.cef.gtk.linux.x86_64_116.0.21/chromium-5845/libequochro.so: libgbm.so.1: cannot open shared object file: No such file or directory
+	at java.base/jdk.internal.loader.NativeLibraries.load(Native Method)
+	at java.base/jdk.internal.loader.NativeLibraries$NativeLibraryImpl.open(Unknown Source)
+	at java.base/jdk.internal.loader.NativeLibraries.loadLibrary(Unknown Source)
+	at java.base/jdk.internal.loader.NativeLibraries.loadLibrary(Unknown Source)
+	at java.base/java.lang.ClassLoader.loadLibrary(Unknown Source)
+	at java.base/java.lang.Runtime.load0(Unknown Source)
+	at java.base/java.lang.System.load(Unknown Source)
+	at com.equo.chromium.internal.Engine$1.loadLibrary(Engine.java:90)
+	at org.cef.SystemBootstrap.loadLibrary(SystemBootstrap.java:36)
+	at org.cef.CefApp.startup(CefApp.java:577)
+	at com.equo.chromium.internal.Engine.loadLib(Engine.java:97)
+	at com.equo.chromium.internal.Engine.<clinit>(Engine.java:54)
+	at com.equo.chromium.internal.Windowless.<init>(Windowless.java:19)
+	at com.equo.chromium.internal.Windowless.<init>(Windowless.java:15)
+	at com.equo.chromium.ChromiumBrowser.windowless(ChromiumBrowser.java:92)
+	at org.knime.js.cef.InitWindowlessCEF.run(InitWindowlessCEF.java:73)
+	at org.knime.core.util.IEarlyStartup$EarlyStartupState.runHooksAtStage(IEarlyStartup.java:341)
+	at org.knime.core.util.IEarlyStartup$EarlyStartupState.moveToStage(IEarlyStartup.java:316)
+	at org.knime.core.util.IEarlyStartup$EarlyStartupState.runBeforeWFMClassLoaded(IEarlyStartup.java:274)
+	at org.knime.core.util.IEarlyStartup.runBeforeWFMClassLoaded(IEarlyStartup.java:159)
+	at org.knime.core.node.workflow.WorkflowManager.<clinit>(WorkflowManager.java:435)
+	at org.knime.core.node.workflow.BatchExecutor.loadWorkflow(BatchExecutor.java:750)
+	at org.knime.core.node.workflow.BatchExecutor.runOne(BatchExecutor.java:917)
+	at org.knime.core.node.workflow.BatchExecutor.runAll(BatchExecutor.java:899)
+	at org.knime.core.node.workflow.BatchExecutor.mainRun(BatchExecutor.java:673)
+	at org.knime.product.headless.KNIMEBatchApplication.runBatchExecutor(KNIMEBatchApplication.java:138)
+	at org.knime.product.headless.KNIMEBatchApplication.start(KNIMEBatchApplication.java:91)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:208)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:143)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:109)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:439)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:271)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.base/java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:651)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:588)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1459)
+	at org.eclipse.equinox.launcher.Main.main(Main.java:1432)
+!SESSION 2025-06-04 18:10:48.021 -----------------------------------------------
+eclipse.buildId=unknown
+java.version=17.0.5
+java.vendor=Eclipse Adoptium
+BootLoader constants: OS=linux, ARCH=x86_64, WS=gtk, NL=en_US
+Framework arguments:  -application org.knime.product.KNIME_BATCH_APPLICATION -workflowDir=/opt/knime/workflows/HG_Insights_project -reset -nosave
+Command-line arguments:  -os linux -ws gtk -arch x86_64 -application org.knime.product.KNIME_BATCH_APPLICATION -workflowDir=/opt/knime/workflows/HG_Insights_project -reset -nosave -data /tmp/knime-workspace
+
+!ENTRY org.eclipse.osgi 4 0 2025-06-04 18:11:19.147
+!MESSAGE Application error
+!STACK 1
+java.lang.UnsatisfiedLinkError: /opt/knime/plugins/com.equo.chromium.cef.gtk.linux.x86_64_116.0.21/chromium-5845/libequochro.so: libgbm.so.1: cannot open shared object file: No such file or directory
+	at java.base/jdk.internal.loader.NativeLibraries.load(Native Method)
+	at java.base/jdk.internal.loader.NativeLibraries$NativeLibraryImpl.open(Unknown Source)
+	at java.base/jdk.internal.loader.NativeLibraries.loadLibrary(Unknown Source)
+	at java.base/jdk.internal.loader.NativeLibraries.loadLibrary(Unknown Source)
+	at java.base/java.lang.ClassLoader.loadLibrary(Unknown Source)
+	at java.base/java.lang.Runtime.load0(Unknown Source)
+	at java.base/java.lang.System.load(Unknown Source)
+	at com.equo.chromium.internal.Engine$1.loadLibrary(Engine.java:90)
+	at org.cef.SystemBootstrap.loadLibrary(SystemBootstrap.java:36)
+	at org.cef.CefApp.startup(CefApp.java:577)
+	at com.equo.chromium.internal.Engine.loadLib(Engine.java:97)
+	at com.equo.chromium.internal.Engine.<clinit>(Engine.java:54)
+	at com.equo.chromium.internal.Windowless.<init>(Windowless.java:19)
+	at com.equo.chromium.internal.Windowless.<init>(Windowless.java:15)
+	at com.equo.chromium.ChromiumBrowser.windowless(ChromiumBrowser.java:92)
+	at org.knime.js.cef.InitWindowlessCEF.run(InitWindowlessCEF.java:73)
+	at org.knime.core.util.IEarlyStartup$EarlyStartupState.runHooksAtStage(IEarlyStartup.java:341)
+	at org.knime.core.util.IEarlyStartup$EarlyStartupState.moveToStage(IEarlyStartup.java:316)
+	at org.knime.core.util.IEarlyStartup$EarlyStartupState.runBeforeWFMClassLoaded(IEarlyStartup.java:274)
+	at org.knime.core.util.IEarlyStartup.runBeforeWFMClassLoaded(IEarlyStartup.java:159)
+	at org.knime.core.node.workflow.WorkflowManager.<clinit>(WorkflowManager.java:435)
+	at org.knime.core.node.workflow.BatchExecutor.loadWorkflow(BatchExecutor.java:750)
+	at org.knime.core.node.workflow.BatchExecutor.runOne(BatchExecutor.java:917)
+	at org.knime.core.node.workflow.BatchExecutor.runAll(BatchExecutor.java:899)
+	at org.knime.core.node.workflow.BatchExecutor.mainRun(BatchExecutor.java:673)
+	at org.knime.product.headless.KNIMEBatchApplication.runBatchExecutor(KNIMEBatchApplication.java:138)
+	at org.knime.product.headless.KNIMEBatchApplication.start(KNIMEBatchApplication.java:91)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:208)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:143)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:109)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:439)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:271)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.base/java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:651)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:588)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1459)
+	at org.eclipse.equinox.launcher.Main.main(Main.java:1432)

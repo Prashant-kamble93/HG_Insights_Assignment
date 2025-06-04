@@ -3,7 +3,6 @@ set -o errexit
 set -o nounset
 set -o pipefail
 
-# Check that exactly one argument was passed
 if [[ "$#" -ne 1 ]]; then
   echo "ERROR: Exactly one argument required: 'runtime' or 'dev'"
   exit 1
@@ -11,7 +10,6 @@ fi
 
 INSTALL_TYPE="$1"
 
-# Define packages
 RUNTIME_PACKAGES="libffi8 libssl3 libldap-2.5-0 netcat-openbsd curl lsb-release"
 DEV_PACKAGES="build-essential git libffi-dev libssl-dev libldap2-dev"
 

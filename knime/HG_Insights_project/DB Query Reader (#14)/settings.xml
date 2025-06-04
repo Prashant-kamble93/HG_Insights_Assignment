@@ -6,18 +6,17 @@
         <entry key="memory_policy" type="xstring" value="CacheSmallInMemory"/>
     </config>
     <config key="model">
-        <entry key="statementSeparator" type="xstring" value=";"/>
-        <entry key="statement" type="xstring" value="TRUNCATE TABLE &quot;public&quot;.&quot;customer_data&quot;;%%00010"/>
-        <config key="multipleStatement_Internals">
-            <entry key="SettingsModelID" type="xstring" value="SMID_boolean"/>
+        <entry key="sql_statement" type="xstring" value="SELECT * FROM `telecom_analytics`.`stg_telecom_churn`"/>
+        <config key="external_to_knime_mapping_Internals">
+            <entry key="SettingsModelID" type="xstring" value="SMID_dataTypeMapping"/>
             <entry key="EnabledStatus" type="xboolean" value="true"/>
         </config>
-        <entry key="multipleStatement" type="xboolean" value="false"/>
+        <config key="external_to_knime_mapping"/>
     </config>
     <entry key="customDescription" type="xstring" isnull="true" value=""/>
     <entry key="state" type="xstring" value="EXECUTED"/>
-    <entry key="factory" type="xstring" value="org.knime.database.node.manipulation.executor.DBExecutorNodeFactory"/>
-    <entry key="node-name" type="xstring" value="DB SQL Executor"/>
+    <entry key="factory" type="xstring" value="org.knime.database.node.io.reader.query.DBQueryReaderNodeFactory"/>
+    <entry key="node-name" type="xstring" value="DB Query Reader"/>
     <entry key="node-bundle-name" type="xstring" value="KNIME database nodes"/>
     <entry key="node-bundle-symbolic-name" type="xstring" value="org.knime.database.nodes"/>
     <entry key="node-bundle-vendor" type="xstring" value="KNIME AG, Zurich, Switzerland"/>
@@ -27,22 +26,20 @@
     <entry key="node-feature-vendor" type="xstring" value="KNIME AG, Zurich, Switzerland"/>
     <entry key="node-feature-version" type="xstring" value="5.4.4.v202504301444"/>
     <config key="factory_settings"/>
-    <entry key="name" type="xstring" value="DB SQL Executor"/>
+    <entry key="name" type="xstring" value="DB Query Reader"/>
     <entry key="hasContent" type="xboolean" value="true"/>
     <entry key="isInactive" type="xboolean" value="false"/>
     <config key="ports">
         <config key="port_1">
             <entry key="index" type="xint" value="1"/>
-            <entry key="port_spec_class" type="xstring" value="org.knime.database.port.DBSessionPortObjectSpec"/>
-            <entry key="port_object_class" type="xstring" value="org.knime.database.port.DBSessionPortObject"/>
-            <entry key="port_object_summary" type="xstring" value="PostgreSQL 02b43f43-0db9-4c86-9965-e56da03e89a9"/>
-            <entry key="port_spec_location" type="xstring" value="spec/spec.zip"/>
-            <entry key="port_object_location" type="xstring" value="object/portobject.zip"/>
+            <entry key="port_spec_class" type="xstring" value="org.knime.core.data.DataTableSpec"/>
+            <entry key="port_object_class" type="xstring" value="org.knime.core.node.BufferedDataTable"/>
+            <entry key="port_object_summary" type="xstring" value="Rows: 1000, Cols: 10"/>
             <entry key="port_dir_location" type="xstring" value="port_1"/>
         </config>
     </config>
     <config key="filestores">
         <entry key="file_store_location" type="xstring" isnull="true" value=""/>
-        <entry key="file_store_id" type="xstring" value="c2970af3-cdee-4145-957d-0f85b508fcbf"/>
+        <entry key="file_store_id" type="xstring" value="2755b58b-c37c-47c1-a40f-72236b6de929"/>
     </config>
 </config>

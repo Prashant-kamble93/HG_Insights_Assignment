@@ -939,7 +939,7 @@
             <entry key="index" type="xint" value="1"/>
             <entry key="port_spec_class" type="xstring" value="org.knime.database.port.DBSessionPortObjectSpec"/>
             <entry key="port_object_class" type="xstring" value="org.knime.database.port.DBSessionPortObject"/>
-            <entry key="port_object_summary" type="xstring" value="PostgreSQL 02b43f43-0db9-4c86-9965-e56da03e89a9"/>
+            <entry key="port_object_summary" type="xstring" value="PostgreSQL 14505f13-e2e2-407e-9759-97e9df0bbc65"/>
             <entry key="port_spec_location" type="xstring" value="spec/spec.zip"/>
             <entry key="port_object_location" type="xstring" value="object/portobject.zip"/>
             <entry key="port_dir_location" type="xstring" value="port_1"/>
@@ -947,6 +947,6 @@
     </config>
     <config key="filestores">
         <entry key="file_store_location" type="xstring" isnull="true" value=""/>
-        <entry key="file_store_id" type="xstring" value="80730b86-b2e0-4218-8221-67dd16fce647"/>
+        <entry key="file_store_id" type="xstring" value="40d600ca-76d6-415a-ad3d-3f13a3c4b5bd"/>
     </config>
 </config>

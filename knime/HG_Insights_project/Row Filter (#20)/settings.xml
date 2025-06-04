@@ -6,20 +6,38 @@
         <entry key="memory_policy" type="xstring" value="CacheSmallInMemory"/>
     </config>
     <config key="model">
-        <config key="ColumnOrder">
-            <entry key="array-size" type="xint" value="11"/>
-            <entry key="0" type="xstring" value="HashedCustomerID"/>
-            <entry key="1" type="xstring" value="Age"/>
-            <entry key="2" type="xstring" value="Gender"/>
-            <entry key="3" type="xstring" value="Tenure"/>
-            <entry key="4" type="xstring" value="MonthlyCharges"/>
-            <entry key="5" type="xstring" value="ContractType"/>
-            <entry key="6" type="xstring" value="InternetService"/>
-            <entry key="7" type="xstring" value="TotalCharges"/>
-            <entry key="8" type="xstring" value="TechSupport"/>
-            <entry key="9" type="xstring" value="Churn"/>
-            <entry key="10" type="xstring" value="&lt;any unknown new column&gt;"/>
+        <entry key="matchCriteria" type="xstring" value="AND"/>
+        <config key="predicates">
+            <config key="0">
+                <config key="column">
+                    <entry key="selected" type="xstring" value="isUpdated"/>
+                    <config key="compatibleTypes_Internals">
+                        <entry key="array-size" type="xint" value="3"/>
+                        <entry key="0" type="xstring" value="org.knime.core.data.StringValue"/>
+                        <entry key="1" type="xstring" value="org.knime.core.data.DataValue"/>
+                        <entry key="2" type="xstring" value="org.knime.core.data.NominalValue"/>
+                    </config>
+                </config>
+                <entry key="operator" type="xstring" value="EQ"/>
+                <config key="predicateValues">
+                    <config key="values">
+                        <config key="0">
+                            <config key="typeIdentifier">
+                                <entry key="cell_class" type="xstring" value="org.knime.core.data.def.StringCell"/>
+                                <entry key="is_null" type="xboolean" value="false"/>
+                            </config>
+                            <config key="stringCaseMatching">
+                                <entry key="caseMatching" type="xstring" value="CASEINSENSITIVE"/>
+                            </config>
+                            <entry key="value" type="xstring" value="TRUE"/>
+                        </config>
+                    </config>
+                    <entry key="inputKind" type="xstring" value="SINGLE"/>
+                </config>
+            </config>
         </config>
+        <entry key="domains" type="xstring" value="RETAIN"/>
+        <entry key="outputMode" type="xstring" value="MATCHING"/>
     </config>
     <config key="variables"/>
     <entry key="customDescription" type="xstring" isnull="true" value=""/>
@@ -28,8 +46,8 @@
         <entry key="type" type="xstring" value="WARNING"/>
         <entry key="message" type="xstring" value="Node created an empty data table."/>
     </config>
-    <entry key="factory" type="xstring" value="org.knime.base.node.preproc.columnresorter.ColumnResorterNodeFactory"/>
-    <entry key="node-name" type="xstring" value="Column Resorter"/>
+    <entry key="factory" type="xstring" value="org.knime.base.node.preproc.filter.row3.RowFilterNodeFactory"/>
+    <entry key="node-name" type="xstring" value="Row Filter"/>
     <entry key="node-bundle-name" type="xstring" value="KNIME Base Nodes"/>
     <entry key="node-bundle-symbolic-name" type="xstring" value="org.knime.base"/>
     <entry key="node-bundle-vendor" type="xstring" value="KNIME AG, Zurich, Switzerland"/>
@@ -39,7 +57,7 @@
     <entry key="node-feature-vendor" type="xstring" value="KNIME AG, Zurich, Switzerland"/>
     <entry key="node-feature-version" type="xstring" value="5.4.4.v202504301443"/>
     <config key="factory_settings"/>
-    <entry key="name" type="xstring" value="Column Resorter"/>
+    <entry key="name" type="xstring" value="Row Filter"/>
     <entry key="hasContent" type="xboolean" value="true"/>
     <entry key="isInactive" type="xboolean" value="false"/>
     <config key="ports">
@@ -47,12 +65,12 @@
             <entry key="index" type="xint" value="1"/>
             <entry key="port_spec_class" type="xstring" value="org.knime.core.data.DataTableSpec"/>
             <entry key="port_object_class" type="xstring" value="org.knime.core.node.BufferedDataTable"/>
-            <entry key="port_object_summary" type="xstring" value="Rows: 0, Cols: 20"/>
+            <entry key="port_object_summary" type="xstring" value="Rows: 0, Cols: 21"/>
             <entry key="port_dir_location" type="xstring" value="port_1"/>
         </config>
     </config>
     <config key="filestores">
         <entry key="file_store_location" type="xstring" isnull="true" value=""/>
-        <entry key="file_store_id" type="xstring" value="4246a357-8eac-4632-acc5-0a6bc16ae68d"/>
+        <entry key="file_store_id" type="xstring" value="34a88cc2-098d-4044-b25f-1fadeb14ad3d"/>
     </config>
 </config>
